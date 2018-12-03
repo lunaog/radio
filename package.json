@@ -1,0 +1,17 @@
+{
+  "name": "Diasporadical-Radio",
+  "version": "1.0.0",
+  "description": "Music from the Margins",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.7.1",
+    "express": "^4.13.3"
+  }
+}

@@ -1,0 +1,605 @@
+[
+    {
+      "name": "Chhoti Ma",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-122.420654296875, 37.785910776551354",
+      "file": "/chhoti.mp3",
+      "genre": "Hip hop,"
+    },
+    {
+      "name": "Favi",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-122.420654296875, 37.785910776551354",
+      "file": "/favi.mp3",
+      "genre": "Hip hop,reggaeton"
+    },
+    {
+      "name": "The Philharmonik",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-121.497802734375, 38.62687046392973",
+      "file": "/philhamonik.mp3",
+      "genre": "Soul"
+    },
+    {
+      "name": "Los Rakas",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-122.2675323486328, 37.811411388625636",
+      "file": "/los-rakas.mp3",
+      "genre": "Hop Hop"
+    },
+    {
+      "name": "World Hood",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-121.497802734375, 38.61687046392973",
+      "file": "/worldwide-hood.mp3",
+      "genre": "Tropical Bass"
+    },
+    {
+      "name": "La Misa Negra",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-122.2675323486328, 37.811411388625636",
+      "file": "/la-misa-negra.mp3",
+      "genre": ""
+    },
+    {
+      "name": "War of Akiza",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-122.2675323486328, 37.811411388625636",
+      "file": "/war-of-akiza.mp3",
+      "genre": "Punk"
+    },
+    {
+      "name": "Las Cafeteras",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-118.23486328125, 34.10725639663118",
+      "file": "/las-cafeteras.mp3",
+      "genre": "Indie folk"
+    },
+    {
+      "name": "Gifted and Blessed",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-118.23486328125, 34.10725639663119",
+      "file": "/gifted-bless.mp3",
+      "genre": "Electronic"
+    },
+    {
+      "name": "Yuca Soul",
+      "continent": "North America",
+      "country": "United States",
+      "state": "California",
+      "city": "-118.23486328125, 34.10725639663120",
+      "file": "/yuca-soul.mp3",
+      "genre": "Electronic"
+    },
+    {
+      "name": "Lxs Krudxs",
+      "continent": "North America",
+      "country": "United States",
+      "state": "Texas",
+      "city": "-97.80029296875, 30.334953881988564",
+      "file": "/lxs-krudxs.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Norvis Jr.",
+      "continent": "North America",
+      "country": "United States",
+      "state": "Texas",
+      "city": "-96.87744140625, 32.8149783969858",
+      "file": "/norvis-jr.mp3",
+      "genre": "Soul"
+    },
+    {
+      "name": "Mother Nature",
+      "continent": "North America",
+      "country": "United States",
+      "state": "Illinois",
+      "city": "-87.62695312499999,41.86956082699455",
+      "file": "/mother-nature.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Dio Gandih",
+      "continent": "North America",
+      "country": "United States",
+      "state": "New York",
+      "city": "-74.7015380859375, 42.04521345501039",
+      "file": "/dio-gandih.mp3",
+      "genre": "Hip Hop"
+    },
+    {
+      "name": "Standing On The Corner",
+      "continent": "North America",
+      "country": "United States",
+      "state": "New York",
+      "city": "-73.95755767822266, 40.67569099388361",
+      "file": "/standing-corner.mp3",
+      "genre": "Soul"
+    },
+    {
+      "name": "Combo Chimbita",
+      "continent": "North America",
+      "country": "United States",
+      "state": "New York",
+      "city": "-73.95755767822266, 40.68569099388361",
+      "file": "/combo-chimbita.mp3",
+      "genre": "Cumbia,Tropical Bass"
+    },
+    {
+      "name": "STEFA*",
+      "continent": "North America",
+      "country": "United States",
+      "state": "New York",
+      "city": "-73.90605926513672, 40.73399053853161",
+      "file": "/stefa.mp3",
+      "genre": "Soul"
+    },
+    {
+      "name": "Downtown Boys",
+      "continent": "North America",
+      "country": "United States",
+      "state": "New York",
+      "city": "-73.95755767822266, 40.68769099388361",
+      "file": "/downtown-boys.mp3",
+      "genre": "Punk"
+    },
+    {
+      "name": "Sammus",
+      "continent": "North America",
+      "country": "United States",
+      "state": "New York",
+      "city": "-76.50604248046875, 42.43916743978628",
+      "file": "/sammus.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Phony Ppl",
+      "continent": "North America",
+      "country": "United States",
+      "state": "New York",
+      "city": "-73.95755767822266, 40.68569099388361",
+      "file": "/phony-ppl.mp3",
+      "genre": "Hip hop, soul, indie"
+    },
+    {
+      "name": "Nani Castle",
+      "continent": "North America",
+      "country": "United States",
+      "state": "New York",
+      "city": "-74.0972900390625, 40.63688312646408",
+      "file": "/nani-castle.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Childish Major",
+      "continent": "North America",
+      "country": "United States",
+      "state": "Georgia",
+      "city": "-84.4189453125, 33.7608820008691",
+      "file": "/childish-major.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Frank Waln",
+      "continent": "North America",
+      "country": "United States",
+      "state": "South Dakota",
+      "city": "-102.46124267578125, 43.207177786666655",
+      "file": "/frank-waln.mp3",
+      "genre": ""
+    },
+    {
+      "name": "Young Ragga",
+      "continent": "Caribbean",
+      "country": "Puerto Rico",
+      "state": "Puerto Rico",
+      "city": "-66.05306625366211,18.447613923244745",
+      "file": "/young-ragga.mp3",
+      "genre": "Reggae"
+    },
+    {
+      "name": "Deborah Blues",
+      "continent": "Caribbean",
+      "country": "Puerto Rico",
+      "state": "Puerto Rico",
+      "city": "-66.08001708984375,18.411866765202845",
+      "file": "/deborah-blues.mp3",
+      "genre": "Reggaeton"
+    },
+    {
+      "name": "Fuete Billete",
+      "continent": "Caribbean",
+      "country": "Puerto Rico",
+      "state": "Puerto Rico",
+      "city": "-66.08001708984375,18.441866765202845",
+      "file": "/fuete-billete.mp3",
+      "genre": "Reggaeton"
+    },
+    {
+      "name": "Sr. Langosta",
+      "continent": "Caribbean",
+      "country": "Puerto Rico",
+      "state": "Puerto Rico",
+      "city": "-66.08001708984375,18.351866765202845",
+      "file": "/sr-langosta.mp3",
+      "genre": ""
+    },
+    {
+      "name": "Diente Perro",
+      "continent": "Caribbean",
+      "country": "Puerto Rico",
+      "state": "Puerto Rico",
+      "city": "-66.08001708984375,18.451866765202845",
+      "file": "/diente-perro.mp3",
+      "genre": ""
+    },
+    {
+      "name": "Turista",
+      "continent": "Caribbean",
+      "country": "Puerto Rico",
+      "state": "Puerto Rico",
+      "city": "-66.08001708984375,18.448866765202845",
+      "file": "/tursita.mp3",
+      "genre": "Electronic"
+    },
+    {
+      "name": "MIMA",
+      "continent": "Caribbean",
+      "country": "Puerto Rico",
+      "state": "Puerto Rico",
+      "city": "-66.08001708984375,18.458866765202845",
+      "file": "/mima.m3",
+      "genre": "Indie"
+    },
+    {
+      "name": "Xuxa Santamaria",
+      "continent": "Caribbean",
+      "country": "Puerto Rico",
+      "state": "Puerto Rico",
+      "city": "-66.08001708984375,18.449966765202845",
+      "file": "/xuxa-santamaria.mp3",
+      "genre": "Electronic"
+    },
+    {
+      "name": "Perro Sucio",
+      "continent": "North America",
+      "country": "Mexico",
+      "state": "",
+      "city": "CDMX",
+      "file": "/perro-sucio.mp3",
+      "genre": "Electronic"
+    },
+    {
+      "name": "Boca Floja",
+      "continent": "North America",
+      "country": "Mexico",
+      "state": "",
+      "city": "CDMX",
+      "file": "/boca-floja.mp3",
+      "genre": "Hip Hop"
+    },
+    {
+      "name": "Capullo",
+      "continent": "North America",
+      "country": "Mexico",
+      "state": "",
+      "city": "AguasCalientes",
+      "file": "/capullo.mp3",
+      "genre": "Electronic"
+    },
+    {
+      "name": "Algodón Egipcio",
+      "continent": "North America",
+      "country": "Mexico",
+      "state": "",
+      "city": "",
+      "file": "/algodon-egipicio.mp3",
+      "genre": "Tropical Bass, pop"
+    },
+    {
+      "name": "DJ Tetris",
+      "continent": "North America",
+      "country": "Mexico",
+      "state": "",
+      "city": "",
+      "file": "/dj-tetris.mp3",
+      "genre": "Electronic"
+    },
+    {
+      "name": "Lido Pimienta",
+      "continent": "North America",
+      "country": "Canada",
+      "state": "",
+      "city": "",
+      "file": "/lido-pimienta.mp3",
+      "genre": "Electronic, tropical bass"
+    },
+    {
+      "name": "Boogát",
+      "continent": "North America",
+      "country": "Canada",
+      "state": "Quebec",
+      "city": "Montreal",
+      "file": "/boogat.mp3",
+      "genre": ""
+    },
+    {
+      "name": "Ziibiwa",
+      "continent": "North America",
+      "country": "Canada",
+      "state": "",
+      "city": "Toronto",
+      "file": "/ziibiwa.mp3",
+      "genre": "Electronic, tropical bass"
+    },
+    {
+      "name": "Lagartijeando",
+      "continent": "South America",
+      "country": "Argentina",
+      "state": "",
+      "city": "",
+      "file": "/lagartijeando.mp3",
+      "genre": "Electronic, tropical bass"
+    },
+    {
+      "name": "Ana Tijoux",
+      "continent": "South America",
+      "country": "Chile",
+      "state": "",
+      "city": "",
+      "file": "/ana-tijoux.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Magallanes",
+      "continent": "South America",
+      "country": "Colombia",
+      "state": "",
+      "city": "",
+      "file": "/magallanes.mp3",
+      "genre": "Tropical Bass"
+    },
+    {
+      "name": "Los Profetas",
+      "continent": "South America",
+      "country": "Colombia",
+      "state": "",
+      "city": "",
+      "file": "/las-profetas.mp3",
+      "genre": "Hip Hop"
+    },
+    {
+      "name": "Nicola Cruz",
+      "continent": "South America",
+      "country": "Ecuador",
+      "state": "",
+      "city": "Quito",
+      "file": "/nicola-cruz.mp3",
+      "genre": "Electronic"
+    },
+    {
+      "name": "Gabylonia",
+      "continent": "South America",
+      "country": "Venezuela",
+      "state": "",
+      "city": "",
+      "file": "/gabylonia.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Run Down Crew",
+      "continent": "Central America",
+      "country": "Nicaragua",
+      "state": "",
+      "city": "Bluefields",
+      "file": "/run-down.mp3",
+      "genre": "Reggae"
+    },
+    {
+      "name": "DJ Jigue",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Habana",
+      "city": "-82.35591888427734, 23.132309378666235",
+      "file": "/dj-jigue.mp3",
+      "genre": "Electronic, tropical bass"
+    },
+    {
+      "name": "DJ Lapiz",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Mayabeque",
+      "city": "-81.9305419921875, 23.15425009841184",
+      "file": "/dj-lapiz.mp3",
+      "genre": "Reggae"
+    },
+    {
+      "name": "El Individuo",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Habana",
+      "city": "-82.35368728637695, 23.09378605366617",
+      "file": "/el-individuo.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "JD Asere",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Habana",
+      "city": "-82.35368728637695, 23.09478605366617",
+      "file": "/jd-asere.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Renovación Urbana",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Habana",
+      "city": "-82.27558135986328, 23.16498237944548",
+      "file": "/renovacion-urbana.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Keren Kmanwey",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Camanwey",
+      "city": "-77.89581298828125, 21.386589909132898",
+      "file": "/keren-k.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Golpe Seko",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Santiago",
+      "city": "-75.82866668701172, 20.02698394590741",
+      "file": "/golpe-seko.mp3",
+      "genre": "Hip hop"
+    },
+    {
+      "name": "Niño Fony",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Santiago",
+      "city": "-75.83115577697754, 20.023113147998444",
+      "file": "/nino-fony.mp3",
+      "genre": "Dancehall"
+    },
+    {
+      "name": "Cimafunk",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Habana",
+      "city": "-82.35591888427734, 23.142309378666235",
+      "file": "/cimafunk.mp3",
+      "genre": ""
+    },
+    {
+      "name": "Kumar",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Habana",
+      "city": "-82.35591888427734, 23.152309378666235",
+      "file": "/kumar.mp3",
+      "genre": "Tropical bass, soul"
+    },
+    {
+      "name": "El Cepe MC",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Piñar de Rios",
+      "city": "-82.95639038085936, 22.741039724897707",
+      "file": "/cp.mp3",
+      "genre": ""
+    },
+    {
+      "name": "Obsesión",
+      "continent": "Caribbean",
+      "country": "Cuba",
+      "state": "Habana",
+      "city": "-82.33317375183105, 23.126626304711035",
+      "file": "/obsesion.mp3",
+      "genre": ""
+    },
+    {
+      "name": "Carolina Camacho",
+      "continent": "Caribbean",
+      "country": "Dominican Republic",
+      "state": "",
+      "city": "-70.2191162109375, 18.620218991632978",
+      "file": "/carolina-camacho.mp3",
+      "genre": "Tropical bass"
+    },
+    {
+      "name": "MULA",
+      "continent": "Caribbean",
+      "country": "Dominican Republic",
+      "state": "",
+      "city": "-69.78515625,18.48481889407345",
+      "file": "/mula.mp3",
+      "genre": ""
+    },
+    {
+      "name": "El Gran Poder de Diosa",
+      "continent": "Caribbean",
+      "country": "Dominican Republic",
+      "state": "",
+      "city": "-69.7796630859375,18.760712758499565",
+      "file": "/el-gran-poder.mp3",
+      "genre": "Tropical bass, cumbia"
+    },
+    {
+      "name": "Popcaan",
+      "continent": "Caribbean",
+      "country": "Jamaica",
+      "state": "",
+      "city": "",
+      "file": "/popcaan.mp3",
+      "genre": "Dancehall"
+    },
+    {
+      "name": "Royal Dainte",
+      "continent": "Caribbean",
+      "country": "Trinidad and Tobago",
+      "state": "",
+      "city": "",
+      "file": "/royal-dainte.mp3",
+      "genre": "Dancehall"
+    },
+    {
+      "name": "Akae Beka",
+      "continent": "Caribbean",
+      "country": "Virgin Islands",
+      "state": "",
+      "city": "St. Croix",
+      "file": "/akae-beka.mp3",
+      "genre": "Reggae"
+    },
+    {
+      "name": "Presure",
+      "continent": "Caribbean",
+      "country": "Virgin Islands",
+      "state": "",
+      "city": "",
+      "file": "",
+      "genre": ""
+    },
+    {
+      "name": "9",
+      "continent": "9",
+      "country": "9",
+      "state": "9",
+      "city": "9",
+      "file": "https://www.youtube.com/watch?v=iiPLgTVOwJ4&feature=youtu.be&fbclid=IwAR1tmy20NwiRsRyz_jAPRHJP6IAOQsilFCdgpHzjjFNeD-ll98Le_pPOeE0",
+      "genre": "l"
+    },
+    {
+      "name": "88",
+      "continent": "9",
+      "country": "9",
+      "state": "9",
+      "city": "9",
+      "file": "https://www.youtube.com/watch?v=iiPLgTVOwJ4&feature=youtu.be&fbclid=IwAR1tmy20NwiRsRyz_jAPRHJP6IAOQsilFCdgpHzjjFNeD-ll98Le_pPOeE0",
+      "genre": "l"
+    }
+  ]

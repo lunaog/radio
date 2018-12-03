@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset='utf-8'>
+	<title>Music Map</title>
+	<meta content='initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+	</script>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'>
+	</script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet'>
+	<style>
+	       body {
+	       margin: 0;
+	       padding: 0;
+	       }
+	       
+	       #map {
+	       position: absolute;
+	       top: 0;
+	       bottom: 0;
+	       width: 100%;
+	       }
+
+	       .usercoordinates {
+	       background: rgba(0,0,0,0.5);
+	       color: #fff;
+	       position: absolute;
+	       bottom: 10px;
+	       left: 10px;
+	       padding:5px 10px;
+	       margin: 0;
+	       font-size: 11px;
+	       line-height: 18px;
+	       border-radius: 3px;
+	       display: none;
+	         }
+	</style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class= "pin-bottomleft"> 
+    <div class="space-right8">
+        <a href = "clearfix space-top1 space-bottom2"/> 
+          <p class="description">
+            "HOW TO"
+            </p>
+          <div class="map-legend hide-mobile">...</div>
+        </div>
+        </div>
+
+        <div class="audio-player">
+          <div id="play-btn"></div>
+          <div class="audio-wrapper" id="player-container" href="javascript:;">
+          <audio id="player" ontimeupdate="initProgressBar()">
+             <source id="audioFile" src="/name" type="audio/mp3">
+           </audio>
+         </div>
+         <div class="player-controls">
+           <p>"youtubelink" <small>by</small> "Name"</p>
+           <span id="seekObjContainer">
+             <progress id="seekObj" value="0" max="1"></progress>
+           </span>
+           <br>
+           <small style="float: left; position: relative; left: 15px;" class="start-time"></small>
+           <small style="float: right; position: relative; right: 20px;" class="end-time"></small>    
+  </div>
+  </div>
+        
+	<pre id='mouseLatLong'></pre>
+	<pre class='usercoordinates' id='usercoordinates'></pre>
+	<script>
+	   mapboxgl.accessToken = 'pk.eyJ1IjoibHVuYS1vZyIsImEiOiJjamY5b3o4ZzMyM3pxMn' +
+	                          'dwZDg3b3ltNjFoIn0.38MEVY0yF9PIxTBqHuJV0Q';
+	   var coordinates = document.getElementById('coordinates');
+	   const map = new mapboxgl.Map({
+	     container: 'map',
+	     style: 'mapbox://styles/luna-og/cjp747q7z0nhn2spasqq2ern3',
+	   });
+	   
+	   window.addEventListener('load',init);
+	   function init(){  // on page load, get data and render
+	     getData();
+	   }
+     var canvas = map.getCanvasContainer();
+     
+	   //User coordinates 
+	   var geojson = {
+	     "type": "FeatureCollection",
+	     "features": [{
+	       "type": "Feature",
+	           "geometry": {
+	             "type": "Point",
+	             "coordinates": [0, 0]
+	         },
+	     }]
+	   };
+	   
+	   function onMove(e) {
+	     var coords = e.lngLat;
+	     // Set a UI indicator for dragging.
+	     canvas.style.cursor = 'grabbing';
+	     // Update the Point feature in `geojson` coordinates
+	     // and call setData to the source layer `point` on it.
+	     geojson.features[0].geometry.coordinates = [coords.lng, coords.lat];
+	     map.getSource('point').setData(geojson);
+	   }
+
+	   function onUp(e) {
+	       var coords = e.lngLat;    
+	       // Unbind mouse/touch events
+	       map.off('mousemove', onMove);
+	       map.off('touchmove', onMove);
+	   }
+
+
+	   var features =[];
+	   function getData(){
+	     $.ajax({
+	         url: '/api/get',
+	         type: 'GET',
+	         failure: function(err){
+	           console.log ("Could not get the data");
+	           return alert("Something went wrong");
+	       },
+	       success: function(data) {
+	         data.forEach(function(currentArtist){
+	           //var str = currentArtist["city"];
+	           //var coords = str.split(',');
+	           var lat = parseFloat(currentArtist["lat"]);
+	           var lon = parseFloat(currentArtist["lon"]);
+	           var obj = {
+	             "type": "Feature",
+	             "geometry": {
+	                   "type": "Point",
+	                   "coordinates": [lon, lat]
+	             },
+	             "properties": {
+	               "artist": currentArtist
+	             }
+	           }   
+	           console.log([lat, lon]);
+	           features.push(obj);
+	         })
+	         drawMap();
+	         }
+	     });
+	   }
+
+	   function drawMap(){
+	     mapboxgl.accessToken = 'pk.eyJ1IjoibHVuYS1vZyIsImEiOiJjamY5b3o4ZzMy' +
+	                            'M3pxMndwZDg3b3ltNjFoIn0.38MEVY0yF9PIxTBqHuJ' +
+	                            'V0Q';
+	     map.on('load', function() {
+	     //map.loadImage("https://cdn0.iconfinder.com/data/icons/small-n-flat/" +
+	     //              "24/678111-map-marker-512.png",
+	       map.loadImage("/marker2.png",
+	       // this is where we load the image file
+	       function(error, image) { 
+	         // this is where we name the image file we are loading
+	         map.addImage("custom-marker", image); 
+	         map.addLayer({
+	           // this is the name of the layer, it is what we will reference
+	           // below
+	           'id': "markers",
+	           'type': "symbol",
+	           // now we are adding the source to the layer more directly and
+	           // cleanly
+	           'source': { 
+	             'type': "geojson",
+	             'data': {
+	               'type' : 'FeatureCollection',
+	               'features' : features,
+	              }
+	           },
+	           'layout': {
+	               // the name of image file we used above
+	              "icon-image": "custom-marker",
+	              "icon-allow-overlap": false,
+	               // this is a multiplier applied to the standard size. So if
+	               // you want it half the size put ".5"
+	              "icon-size": .04 
+	           }
+	         }) 
+	       
+	         //User-Coordinates
+	         map.addSource('point', {
+	           "type": "geojson",
+	           "data": geojson
+	         });
+
+	         map.addLayer({
+	          "id": "point",
+	          "type": "circle",
+	          "source": "point",
+	          "paint": {
+	              "circle-radius": 10,
+	              "circle-color": "#4B0082"
+	           }
+	         });
+
+	       
+	         // When the cursor enters a feature in the point layer, prepare
+	         // for dragging.
+	         map.on('mouseenter', 'point', function() {
+	           map.setPaintProperty('point', 'circle-color', '#800080');
+	             canvas.style.cursor = '';
+	         });
+
+	         map.on('mouseleave', 'point', function() {
+	           map.setPaintProperty('point', 'circle-color', '#4B0082');
+	             canvas.style.cursor = '';
+	         });
+
+	         map.on('mousedown', 'point', function(e) {
+	           // Prevent the default map drag behavior.
+	           e.preventDefault();
+	           canvas.style.cursor = 'grab';
+	           map.on('mousemove', onMove);
+	           map.once('mouseup', onUp);
+	         });
+
+	         //map.on('touchstart', 'point', function(e) {
+	         //  if (e.points.length !== 1) return;
+	         //  // Prevent the default map drag behavior.
+	         //  e.preventDefault();
+	         //  map.on('touchmove', onMove);
+	         //  map.once('touchend', onUp);
+	         //});
+	       
+
+	         // Other stuff 
+	         map.on('click', 'markers', function(e) {
+	           console.log(e);
+	           console.log(e.features);
+	           var coordinates = e.features[0].geometry.coordinates.slice();
+
+	           // make this so that it grabs the audio from the coresponding
+	           // json object and play it 
+	           artist = JSON.parse(e.features[0].properties.artist);
+             var description = artist["name"];
+             //PASS THE MEDIA PLAYER A FILE HERE — AJAX REQUEST AND STREAM THE FILE 
+             var file = artist["filename"]; 
+             console.log(file);            
+
+            // grab source element with id "audioFile"
+            // set attribute "src" to file
+            var elt = document.getElementById("audioFile");
+            elt.src = file;
+            console.log(elt);
+            
+
+	           
+	           
+
+	           while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+	             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+	           }
+
+	           new mapboxgl.Popup()
+	             .setLngLat(coordinates)
+	             .setHTML(description)
+	             .addTo(map);          
+	         })
+	       });
+
+	       // Change the cursor to a pointer when the mouse is over the places
+	       // layer.
+	       map.on('mouseenter', 'markers', function () {
+	       map.getCanvas().style.cursor = 'pointer';
+	        });
+
+	       // Change it back to a pointer when it leaves.
+	       map.on('mouseleave', 'markers', function () {
+	         map.getCanvas().style.cursor = '';
+	       });
+
+	       map.on('dblclick', 'point', function (e) {
+	         e.preventDefault();
+
+	         var lat = e.lngLat.lat;
+	         var lon = e.lngLat.lng;
+	         var params = $.param({
+	           lat: lat,
+	           lon: lon
+	         });
+	         var url = "http://localhost:3000/form.html/?" + params;
+	         window.location.href = url;
+
+	       });
+	     });
+       console.log(features);
+      }  
+	     
+	</script> 
+</body>
+</html>
