@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset='utf-8'>
-	<title>Music Map</title>
+	<title>Radio</title>
 	<meta content='initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js">
 	</script>
@@ -15,11 +15,27 @@
 	       padding: 0;
 	       }
 	       
-	       #map {
+	       #container {
+         position: absolute;
+	       bottom: 100px;
+         width: 100%;
+         margin: 20px;
+         }
+
+        #description {
+          
+          margin-right: auto;
+          margin-left: auto;
+        
+          bottom: 0;
+          width: 100%;
+         }
+
+         #map {
 	       position: absolute;
 	       top: 0;
-	       bottom: 0;
-	       width: 100%;
+	       bottom: 200px;
+         width: 100%;
 	       }
 
 	       .usercoordinates {
@@ -34,39 +50,63 @@
 	       line-height: 18px;
 	       border-radius: 3px;
 	       display: none;
-	         }
+           }
+
+           audio {
+             display: block;
+             margin: 5;
+             width: 100%;
+             height: 55px;
+             border: solid;
+             border-width: 15px;
+             margin-left: 0px;
+             border-color: #DCDCDC;
+             border-radius: 1px;
+             background-color: #DCDCDC;
+             position: absolute;
+             bottom: 0px;
+
+             filter: sepia(50%) saturate(400%) grayscale(0) contrast(1000%) hue-rotate(-66deg) invert(14%);
+           }
+          
+           .mapboxgl-popup-close-button {
+             display: none;
+           }
+
+           .mapboxgl-popup-content {
+             padding: 5;
+             width: 100%;  
+            border-radius: 1px;
+             align-content: center;
+            }
+            
+            .mapboxgl-popup-content {
+            color: blue;
+            font: 12px/20px 'Open Sans', sans-serif;
+            }
+
+            .mapboxgl-popup-tip{
+              display: none;
+            }
+       
 	</style>
 </head>
 <body>
-  <div id="map"></div>
-  <div class= "pin-bottomleft"> 
-    <div class="space-right8">
-        <a href = "clearfix space-top1 space-bottom2"/> 
-          <p class="description">
-            "HOW TO"
-            </p>
-          <div class="map-legend hide-mobile">...</div>
-        </div>
-        </div>
-
-        <div class="audio-player">
-          <div id="play-btn"></div>
-          <div class="audio-wrapper" id="player-container" href="javascript:;">
-          <audio id="player" ontimeupdate="initProgressBar()">
-             <source id="audioFile" src="/name" type="audio/mp3">
-           </audio>
-         </div>
-         <div class="player-controls">
-           <p>"youtubelink" <small>by</small> "Name"</p>
-           <span id="seekObjContainer">
-             <progress id="seekObj" value="0" max="1"></progress>
-           </span>
-           <br>
-           <small style="float: left; position: relative; left: 15px;" class="start-time"></small>
-           <small style="float: right; position: relative; right: 20px;" class="end-time"></small>    
-  </div>
-  </div>
+  <div id= "container">
+  <div id= "description">
+    <h3>
+Diasporadical Radio
+    </h3> 
+    <p>wordswordswordswordswordswords wordswords words words </p> 
         
+    </div>
+    </div>
+
+    <p class="visually-hidden audio-transcript" tabindex="0">This is an audio recording. You are hearing the audio.</p>      
+    <audio controls id="audioFile" type="audio/webm" autoplay="autoplay" controlsList="nodownload"></audio>
+    
+    </div></audio>
+<div id="map"></div>          
 	<pre id='mouseLatLong'></pre>
 	<pre class='usercoordinates' id='usercoordinates'></pre>
 	<script>
@@ -220,15 +260,6 @@
 	           map.once('mouseup', onUp);
 	         });
 
-	         //map.on('touchstart', 'point', function(e) {
-	         //  if (e.points.length !== 1) return;
-	         //  // Prevent the default map drag behavior.
-	         //  e.preventDefault();
-	         //  map.on('touchmove', onMove);
-	         //  map.once('touchend', onUp);
-	         //});
-	       
-
 	         // Other stuff 
 	         map.on('click', 'markers', function(e) {
 	           console.log(e);
@@ -238,21 +269,16 @@
 	           // make this so that it grabs the audio from the coresponding
 	           // json object and play it 
 	           artist = JSON.parse(e.features[0].properties.artist);
-             var description = artist["name"];
-             //PASS THE MEDIA PLAYER A FILE HERE — AJAX REQUEST AND STREAM THE FILE 
-             var file = artist["filename"]; 
-             console.log(file);            
+             var description = artist["name"];  
+
+             
 
             // grab source element with id "audioFile"
             // set attribute "src" to file
             var elt = document.getElementById("audioFile");
-            elt.src = file;
+            elt.src = artist["filename"];
             console.log(elt);
-            
-
 	           
-	           
-
 	           while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
 	             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 	           }

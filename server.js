@@ -2,6 +2,8 @@
 // https://github.com/shiffman/A2Z-F18
 // http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010
 
+console.log('testing');
+
 // Using express: http://expressjs.com/
 var express = require('express');
 
@@ -107,13 +109,22 @@ function addArtist(req, res) {
     '--prefer-ffmpeg', //convert w FFMPEG
     '--ffmpeg-location', '/Users/lunaolavarriagallegos/.local/bin/ffmpeg', //ffmpeg located in this bin 
     '--recode-video', 'webm', //recode using webm
-    '--output', 'music/%(title)s.%(ext)s', //the file will end up in the music folder w name "titleofvide.webm"
+    '--output', 'public/music/%(title)s.%(ext)s', //the file will end up in the music folder w name "titleofvide.webm"
     '--print-json',
     '--no-progress',
     file]
+
+
+  console.log('downloading a file');
   //child_process.execFile("/Users/lunaolavarriagallegos/Library/Python/2.7/bin/youtube-dl", options, callback); 
   var buff = child_process.execFileSync("/Users/lunaolavarriagallegos/Library/Python/2.7/bin/youtube-dl", options);
+  //console.log(JSON.parse(buff.toString()));
+  
   var filename = JSON.parse(buff.toString())["_filename"];
+  filename = filename.substring(7,filename.length);
+
+
+  console.log(filename);
 
   // Let the request know it's all set
   var artist = {
@@ -130,6 +141,7 @@ function addArtist(req, res) {
   };
     
   //Artist Data
+  console.log(artist);
   artists.push(artist);
 
   console.log('adding: ' + JSON.stringify(artist));
@@ -144,5 +156,3 @@ function addArtist(req, res) {
     res.send(artist);
   }
 }
-
-//write a function called set lat and long 
