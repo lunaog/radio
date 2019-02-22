@@ -117,7 +117,7 @@ function addArtist(req, res) {
 
   console.log('downloading a file');
   //child_process.execFile("/Users/lunaolavarriagallegos/Library/Python/2.7/bin/youtube-dl", options, callback); 
-  var buff = child_process.execFileSync("/Users/lunaolavarriagallegos/Library/Python/2.7/bin/youtube-dl", options);
+  var buff = child_process.execFileSync("/usr/local/bin/youtube-dl", options);
   //console.log(JSON.parse(buff.toString()));
   
   var filename = JSON.parse(buff.toString())["_filename"];

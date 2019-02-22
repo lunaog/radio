@@ -13,28 +13,71 @@
 	       body {
 	       margin: 0;
 	       padding: 0;
+				 
 	       }
 	       
 	       #container {
          position: absolute;
-	       bottom: 100px;
-         width: 100%;
+	       bottom: 40px;
+         padding: 20px;
+				 left: -25px;
          margin: 20px;
+				 width: 55%;
+         }
+
+  
+				#container-2 {
+         position: absolute;
+	       bottom: 250px;
+         padding: 10px;
+				 right: 0px;
+         margin: 20px;
+				 width: 35%;
          }
 
         #description {
           
-          margin-right: auto;
-          margin-left: auto;
-        
+          margin-right: 10px;
+          margin-left: 10px;
           bottom: 0;
           width: 100%;
+					text-align: justify;
+					font-family: Arial;
+					text-align: justify;
          }
+
+				 h3 {
+					text-align: justify;
+					font: Arial;
+					color: #C0BDA5;
+					font-size: 30px;
+				 }
+
+					h4 {
+					text-align: justify;
+					font: Arial;
+				width: 100%;
+					font-size: 15px;
+					font-style: normal;
+					font-weight: normal;
+				 }
+ 
+				 h5 {
+					right: 0px;
+					position: absolute;
+					text-align: justify;
+					font-family: Arial;
+					font-size: 15px;
+					font-style: normal;
+					font-weight: normal;
+					 
+				 }
+				
 
          #map {
 	       position: absolute;
 	       top: 0;
-	       bottom: 200px;
+	       bottom: 300px;
          width: 100%;
 	       }
 
@@ -54,12 +97,12 @@
 
            audio {
              display: block;
-             margin: 5;
-             width: 100%;
+             margin: 10;
+             width: 55%;
              height: 55px;
              border: solid;
              border-width: 15px;
-             margin-left: 0px;
+            
              border-color: #DCDCDC;
              border-radius: 1px;
              background-color: #DCDCDC;
@@ -94,13 +137,31 @@
 <body>
   <div id= "container">
   <div id= "description">
-    <h3>
-Diasporadical Radio
+		
+		<h3>
+				Diasporadical Radio
     </h3> 
-    <p>wordswordswordswordswordswords wordswords words words </p> 
-        
-    </div>
-    </div>
+    <h4>
+				Diasporadical Radio is based off the idea that sound is incubated collectively, so community is a vital aspect of the process of music distribution. In a world where we rely on machines to tell us what to listen to (and more increasingly, what to make), it is important that us subjects take control of our listening process.
+		</h4>        
+		</div>
+	</div>
+	<div id= "container-2">
+		<h5> 
+			Diasporadical radio is in constant engagement with diaspora as a theory and a direct manifestation of both 
+			forced and chosen immigration due to things like colonialism, war, famine as well as love and hope.
+			<br>
+			<br>
+			To add music, go to the landing site and drag the purple dot to the location from where the artist is from.	
+			(Choose a location where the artist is based, where the artist's sound is incubated or where the artist claims roots.)
+			<br><br>
+			Once the dot is over a specific location (can be specific as a neighborhood or as general as a country), double click.
+			<br><br>
+			Fill out the form with a Youtube Video.
+			<br><br>
+			Go back to the main page. You should see your music added :) </h5> 
+		</div>
+    
 
     <p class="visually-hidden audio-transcript" tabindex="0">This is an audio recording. You are hearing the audio.</p>      
     <audio controls id="audioFile" type="audio/webm" autoplay="autoplay" controlsList="nodownload"></audio>
@@ -115,7 +176,8 @@ Diasporadical Radio
 	   var coordinates = document.getElementById('coordinates');
 	   const map = new mapboxgl.Map({
 	     container: 'map',
-	     style: 'mapbox://styles/luna-og/cjp747q7z0nhn2spasqq2ern3',
+	     style: 'mapbox://styles/luna-og/cjpfwszey69q92smlqwn5n46d',
+			 zoom: "3",
 	   });
 	   
 	   window.addEventListener('load',init);
