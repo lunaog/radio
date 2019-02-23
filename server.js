@@ -122,6 +122,7 @@ function addArtist(req, res) {
   
   var filename = JSON.parse(buff.toString())["_filename"];
   filename = filename.substring(7,filename.length);
+  filename = filename.replace('.m4a', '.webm');
 
 
   console.log(filename);
