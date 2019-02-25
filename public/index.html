@@ -75,10 +75,11 @@
 				
 
          #map {
-	       position: absolute;
+				 position: absolute;
+				 padding: 10px;
 	       top: 0;
 	       height: 100%;
-         width: 70%;
+         width: 63%;
 	       }
 
 	       .usercoordinates {
@@ -97,8 +98,9 @@
 
            audio {
              display: block;
-             margin: 10;
-             width: 55%;
+						 margin: 10;
+						 padding: 5px;
+             width: 50%;
              height: 55px;
              border: solid;
              border-width: 15px;
@@ -178,7 +180,8 @@
 	   const map = new mapboxgl.Map({
 	     container: 'map',
 	     style: 'mapbox://styles/luna-og/cjsgw6rqx3sbq1fmma2l4k5e4',
-			 zoom: "4",
+			 zoom: "2",
+			 pitch: 40
 	   });
 	   
 	   window.addEventListener('load',init);
