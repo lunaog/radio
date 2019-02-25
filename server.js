@@ -133,7 +133,7 @@ function addArtist(req, res) {
     '--format=bestaudio', //download the one w best audio
     '--extract-audio', //ensures that u only get audio, throw out video 
     '--prefer-ffmpeg', //convert w FFMPEG
-    '--ffmpeg-location', '/Users/lunaolavarriagallegos/.local/bin/ffmpeg', //ffmpeg located in this bin 
+    '--ffmpeg-location', '/usr/bin/ffmpeg', //ffmpeg located in this bin 
     '--recode-video', 'webm', //recode using webm
     '--output', 'public/music/%(title)s.%(ext)s', //the file will end up in the music folder w name "titleofvide.webm"
     '--print-json',
