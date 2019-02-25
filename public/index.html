@@ -166,7 +166,7 @@
 		</div>
     
 
-    <p class="visually-hidden audio-transcript" tabindex="0">This is an audio recording. You are hearing the audio.</p>      
+    <p class="visually-hidden audio-transcript" tabindex="0"> </p>
     <audio controls id="audioFile" type="audio/webm" autoplay="autoplay" controlsList="nodownload"></audio>
     
     </div></audio>
@@ -180,8 +180,9 @@
 	   const map = new mapboxgl.Map({
 	     container: 'map',
 	     style: 'mapbox://styles/luna-og/cjsgw6rqx3sbq1fmma2l4k5e4',
-			 zoom: "2",
-			 pitch: 40
+			 zoom: "3",
+			 pitch: 50,
+			 maxZoom: "5"
 	   });
 	   
 	   window.addEventListener('load',init);
