@@ -38,7 +38,8 @@
         #description {
           
           margin-right: 10px;
-          bottom: 50;
+          margin-left: 10px;
+          bottom: 0;
           width: 100%;
 					text-align: justify;
 					font-family: Arial;
@@ -97,17 +98,18 @@
 
            audio {
              display: block;
-						 right: 0px;
+						 margin: 10;
              width: 30%;
              height: 55px;
              border: solid;
              border-width: 15px;
-	           border-color: #DCDCDC;
+						 left: 750px;
+            
+             border-color: #DCDCDC;
              border-radius: 1px;
              background-color: #DCDCDC;
              position: absolute;
-						 bottom: 5px;
-						 padding-right: 5px;
+             bottom: 0px;
 
              filter: sepia(50%) saturate(400%) grayscale(0) contrast(1000%) hue-rotate(-66deg) invert(14%);
            }
@@ -179,8 +181,7 @@
 	     style: 'mapbox://styles/luna-og/cjsgw6rqx3sbq1fmma2l4k5e4',
 			 zoom: "3",
 			 pitch: 50,
-			 maxZoom: "5", 
-			 minZoom: "8"
+			 maxZoom: "5"
 	   });
 	   
 	   window.addEventListener('load',init);

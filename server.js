@@ -22,6 +22,19 @@ var fs = require('fs');
 var cors = require('cors');
 app.use(cors());
 
+const http = require('http');
+const https = require('https');
+
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/la-red.global/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/la-red.global/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/la-red.global/chain.pem', 'utf8');
+
+const credentials = {
+	key: privateKey,
+	cert: certificate,
+	ca: ca
+};
+
 var router = new express.Router();
 app.use('/form.html', function(req, res) {
   var lat = req.query.lat;
@@ -57,7 +70,20 @@ if (exists) {
 
 // Set up the server
 // process.env.PORT is related to deploying on heroku
-var server = app.listen(process.env.PORT || 80, listen);
+//var server = app.listen(process.env.PORT || 80, listen);
+
+// Starting both http & https servers
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(80, () => {
+	console.log('HTTP Server running on port 80');
+});
+
+httpsServer.listen(443, () => {
+	console.log('HTTPS Server running on port 443');
+});
+
 
 // This call back just tells us that the server has started
 function listen() {
