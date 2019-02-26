@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add an Artist</title>
+
+    <!-- Custom Font - Change 'Muli' to the font you want -->
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Custom CSS inside CSS folder -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" style="margin-top: 60px">
+      <div class="col-md-8">
+        <form id="form" action="/api/create" method="POST">
+
+          <h1>Add an Artist</h1>
+          <div class="form-group">
+            <label for="name">Nombre de Artista</label>
+            <input type="text" name="name" placeholder="Enter Name" class="form-control" id="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="file">Nombre del Tema</label>
+            <input type="text" name="song-name" placeholder="Enter Name of Song" class="form-control" id="file">
+          </div>
+
+          <div class="form-group">
+            <label for="file">Enlace de Youtube</label>
+            <input type="text" name="file" placeholder="Enter Song URL" class="form-control" id="file">
+          </div>
+
+          <div class="form-group">
+            <label for="genre">Género</label>
+            <input type="text" name="genre" placeholder="Enter Genre" class="form-control" id="genre">
+          </div>
+
+          <div class="form-group">
+            <label for="genre">Correo</label>
+            <input type="text" name="email" placeholder="Enter email" class="form-control" id="email">
+          </div>
+
+          <button type="submit" class="btn btn-default">Listo</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      // Url should be '?lat=10.10&lon=30.102'
+      var url = location.search;
+      console.log("url: " + url);
+
+      // Convert the url into a json
+      // ['lat=10.10', 'lon=30.102']
+      var params = url.slice(1).split("&");
+      var str = "{";
+      params.forEach(function(el) {
+        var split = el.split("=");
+        str += '"' + split[0] + '": ' + split[1] + ',';
+      });
+      // Get rid of trailing comma
+      str = str.slice(0, -1);
+      str += "}";
+      console.log(str);
+      lat_lon_json = JSON.parse(str);
+      console.log(lat_lon_json);
+
+
+      // Make the two elements wanted
+      var lat_elem = document.createElement("input");
+      lat_elem.setAttribute("name", "lat");
+      lat_elem.setAttribute("value", lat_lon_json["lat"]);
+      lat_elem.setAttribute("type", "hidden");
+      lat_elem.setAttribute("class", "form-control");
+
+      var lon_elem = document.createElement("input");
+      lon_elem.setAttribute("name", "lon");
+      lon_elem.setAttribute("value", lat_lon_json["lon"]);
+      lon_elem.setAttribute("type", "hidden");
+      lon_elem.setAttribute("class", "form-control");
+
+      // Stick the elements in the form
+      var form = document.getElementById("form")
+      form.appendChild(lat_elem);
+      form.appendChild(lon_elem);
+    </script>
+
+  </body>
+
+    <!-- JQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</html>
