@@ -40,8 +40,8 @@
 				 
 				 #english {
 				position: absolute;
-	       bottom: 380px;
-				 right: 35px;
+	       bottom: 385px;
+				 right: 50px;
 				 color: #C0BDA5;
 				 font-family: Arial;
 				 padding: 0;
@@ -179,8 +179,28 @@
 	<pre class='usercoordinates' id='usercoordinates'></pre>
 	<script>
 		 document.getElementById("english").onclick = function () {
-			 document.getElementById ("container-2").innerHTML = 	"hi";
+			 document.getElementById ("container-2").innerHTML = 	
+			 "La Red Radio se basa en la idea de que el sonido se incuba colectivamente," +
+			 "por lo que la comunidad es un aspecto vital del proceso de distribución de música." + 
+        "En un mundo donde dependemos de las máquinas para decirnos qué escuchar y qué hacer," + 
+        "es importante que los sujetos tomemos el control de nuestro proceso de escucha.";
+       
+			document.getElementById ("container-2").innerHTML += 
+      "La Red Radio está en constante compromiso con la diáspora como una teoría y una" + 
+      "manifestación directa de la inmigración forzada y elegida debido a cosas como el colonialismo," +
+      "la guerra, el hambre y el amor y la esperanza.";
+     
+			document.getElementById ("container-2").innerHTML += 
+      "Para agregar música, vaya al sitio de aterrizaje y arrastre el punto morado a la ubicación de" + 
+      "donde proviene el artista. (Elija una ubicación donde se base el artista, donde se incuba el sonido" +
+      "del artista o donde el artista adquiera raíces)."; 
+      
+			document.getElementById ("container-2").innerHTML += 
+     "Una vez que el punto está sobre una ubicación específica (puede ser específico como vecindario o como" +
+      "general como país), haga doble clic." +
+      "Llena el formulario con un video de Youtube. Regresa a la página principal. Deberías ver tu música añadida :)";
 		 }
+
 		 mapboxgl.accessToken = 'pk.eyJ1IjoibHVuYS1vZyIsImEiOiJjamY5b3o4ZzMyM3pxMn' +
 	                          'dwZDg3b3ltNjFoIn0.38MEVY0yF9PIxTBqHuJV0Q';
 	   var coordinates = document.getElementById('coordinates');
