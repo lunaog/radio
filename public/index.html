@@ -133,12 +133,13 @@
 		
 		<h3>
 				La Red Radio
-    </h3> 
+		</h3> 
     <h4>
 				La Red Radio is based off the idea that sound is incubated collectively, so community is a vital aspect of the process of music distribution. In a world where we rely on machines to tell us what to listen to and what to make, it is important that us subjects take control of our listening process.
 		</h4>        
 		</div>
 	</div>
+	<button id="textChanger">English</button>
 	<div id= "container-2">
 		<h5> 
 			La Red Radio is in constant engagement with diaspora as a theory and a direct manifestation of both 
@@ -164,7 +165,10 @@
 	<pre id='mouseLatLong'></pre>
 	<pre class='usercoordinates' id='usercoordinates'></pre>
 	<script>
-	   mapboxgl.accessToken = 'pk.eyJ1IjoibHVuYS1vZyIsImEiOiJjamY5b3o4ZzMyM3pxMn' +
+		 document.getElementById("textChange").onclick = function () {
+			 document.getElementById ("container-2").innerHTML = 	"hi";
+		 }
+		 mapboxgl.accessToken = 'pk.eyJ1IjoibHVuYS1vZyIsImEiOiJjamY5b3o4ZzMyM3pxMn' +
 	                          'dwZDg3b3ltNjFoIn0.38MEVY0yF9PIxTBqHuJV0Q';
 	   var coordinates = document.getElementById('coordinates');
 	   const map = new mapboxgl.Map({
@@ -381,7 +385,4 @@
 	     
 	</script> 
 </body>
-</html>
-
-
-
+</html>		 
