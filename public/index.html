@@ -26,6 +26,19 @@
   
 				#container-2 {
          position: absolute;
+	       bottom: 350px;
+				 right: 25px;
+				 width: 33%;
+					position: absolute;
+					text-align: justify;
+					font-family: Arial;
+					font-size: 15px;
+					font-style: normal;
+					font-weight: normal;
+				 }
+				 
+				 #container-3 {
+         position: absolute;
 	       bottom: 30px;
 				 right: 25px;
 				 width: 33%;
@@ -35,7 +48,6 @@
 					font-size: 15px;
 					font-style: normal;
 					font-weight: normal;
-					 
          }
 
 				 .innerHTML {
@@ -52,7 +64,7 @@
 					text-align: justify;
 				 }
 				 
-				 #english {
+				 #espanol {
 				position: absolute;
 	       bottom: 385px;
 				 right: 50px;
@@ -162,7 +174,7 @@
 		</h3>        
 		</div>
 	</div>
-	<button id="english">English</button>
+	<button id="espanol">Español</button>
 	<div id= "container-2">
 		<h5> 
 				La Red Radio is based off the idea that sound is incubated collectively, so community is a vital aspect 
@@ -192,24 +204,24 @@
 	<pre id='mouseLatLong'></pre>
 	<pre class='usercoordinates' id='usercoordinates'></pre>
 	<script>
-		 document.getElementById("english").onclick = function () {
-			 document.getElementById ("container-2").innerHTML = 	
+		 document.getElementById("espanol").onclick = function () {
+			 document.getElementById ("container-3").innerHTML = 	
 			 "La Red Radio se basa en la idea de que el sonido se incuba colectivamente," +
 			 "por lo que la comunidad es un aspecto vital del proceso de distribución de música." + 
         "En un mundo donde dependemos de las máquinas para decirnos qué escuchar y qué hacer," + 
         "es importante que los sujetos tomemos el control de nuestro proceso de escucha. <br /> <br />";
        
-			document.getElementById ("container-2").innerHTML += 
+			document.getElementById ("container-3").innerHTML += 
       "La Red Radio está en constante compromiso con la diáspora como una teoría y una" + 
       "manifestación directa de la inmigración forzada y elegida debido a cosas como el colonialismo," +
       "la guerra, el hambre y el amor y la esperanza. <br /> <br />" ;
      
-			document.getElementById ("container-2").innerHTML += 
+			document.getElementById ("container-3").innerHTML += 
       "Para agregar música, vaya al sitio de aterrizaje y arrastre el punto morado a la ubicación de" + 
       "donde proviene el artista. (Elija una ubicación donde se base el artista, donde se incuba el sonido" +
       "del artista o donde el artista adquiera raíces).<br /> <br />"; 
       
-			document.getElementById ("container-2").innerHTML += 
+			document.getElementById ("container-3").innerHTML += 
      "Una vez que el punto está sobre una ubicación específica (puede ser específico como vecindario o como" +
       "general como país), haga doble clic." +
       "Llena el formulario con un video de Youtube. Regresa a la página principal. Deberías ver tu música añadida :)<br /> <br />";
