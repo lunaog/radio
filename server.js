@@ -112,10 +112,6 @@ app.post('/api/create', addArtist);
 
 // Handle that route
 function addArtist(req, res) {
-  // Word and score
-  //var word = req.params.word;
-  // Make sure it's not a string by accident
- // var score = Number(req.params.score);
 
  console.log(req.body);
  var name = req.body.name;
@@ -182,4 +178,5 @@ function addArtist(req, res) {
     // Don't send anything back until everything is done
     res.send(artist);
   }
+  var eventposted;  
 }
