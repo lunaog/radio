@@ -108,9 +108,7 @@ function showAll(req, res) {
 }
 
 // A route for adding a new artist
-app.post('/api/create', addArtist);
-res.send('/', artists)
-  
+app.post('/api/create', addArtist)  
 
 // Handle that route
 function addArtist(req, res) {
