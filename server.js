@@ -108,7 +108,7 @@ function showAll(req, res) {
 }
 
 // A route for adding a new word with a score
-app.post('/api/create', addArtist);
+app.post('', addArtist);
 
 // Handle that route
 function addArtist(req, res) {
@@ -178,5 +178,4 @@ function addArtist(req, res) {
     // Don't send anything back until everything is done
     res.send(artist);
   }
-  var eventposted;  
 }
