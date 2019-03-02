@@ -1,3 +1,98 @@
 [
-
+  {
+    "name": "Young Ragga",
+    "file": "https://www.youtube.com/watch?v=MThrfYC5Y0Y",
+    "genre": "Reggae",
+    "lat": "18.040158909774618",
+    "lon": "-66.39336755525164",
+    "filename": "music/Young Ragga - Caducó (Con Link De Descarga) (CD - Ragga Muffin Style).webm"
+  },
+  {
+    "name": "El Cepe MC",
+    "file": "https://www.youtube.com/watch?v=_fx6ms1Byo4",
+    "genre": "Hip Hop",
+    "lat": "22.36810912177593",
+    "lon": "-83.61450826957031",
+    "filename": "music/EL Cepe MC • Respiraré.webm"
+  },
+  {
+    "name": "El Individuo",
+    "file": "https://www.youtube.com/watch?v=0LSH5ikkjaw",
+    "genre": "Hip Hop",
+    "lat": "22.697258738403605",
+    "lon": "-83.99437392851581",
+    "filename": "music/El Individuo - Baila, Official Audio.webm"
+  },
+  {
+    "name": "Danay Suarez",
+    "file": "https://www.youtube.com/watch?v=RUahaIAJOZY",
+    "genre": "Reggae",
+    "lat": "22.729920374551384",
+    "lon": "-83.65631003845715",
+    "filename": "music/Danay Suarez - Esta Guerra Tan Violenta.webm"
+  },
+  {
+    "name": "Bocafloja",
+    "file": "https://www.youtube.com/watch?v=tbrT2Oi7kQM",
+    "genre": "Rap",
+    "lat": "19.322306476516104",
+    "lon": "-99.18188050694658",
+    "filename": "music/Bocafloja 'Luz' (feat. Veronica Ruiz de Soultik - Video Oficial, 2018.).webm"
+  },
+  {
+    "name": "Chhoti Maa",
+    "file": "https://www.youtube.com/watch?v=vpsLTibxq7U",
+    "genre": "Rap",
+    "lat": "37.5413380401788",
+    "lon": "-122.40315880151134",
+    "filename": "music/Chhoti Maa - Mala Fama.webm"
+  },
+  {
+    "name": "Sorie Kondi",
+    "file": "https://www.youtube.com/watch?v=S35ggfyWKUE",
+    "genre": "Electronic",
+    "lat": "8.556013298366935",
+    "lon": "-12.06411950742276",
+    "filename": "music/Sorie Kondi-Without Money No Family (Chief Boima Remix).webm"
+  },
+  {
+    "name": "Ziminino",
+    "file": "https://www.youtube.com/watch?v=kOAa2ImTPAE",
+    "genre": "Afrofuturism",
+    "lat": "-1.984907557896051",
+    "lon": "-49.12581210387276",
+    "filename": "music/Intermitência.webm"
+  },
+  {
+    "name": "Nikola",
+    "file": "https://www.youtube.com/watch?v=W8x4LTQpsts",
+    "genre": "Electropalo",
+    "lat": "18.473866335067783",
+    "lon": "-69.99022176600658",
+    "filename": "music/Ola de la Mar.webm"
+  },
+  {
+    "name": "JD Asere",
+    "file": "https://www.youtube.com/watch?v=N_AuTGNw7mE",
+    "genre": "Rap",
+    "lat": "23.069252189052293",
+    "lon": "-82.32808496615252",
+    "filename": "music/JD - Puchogensa (Official Video).webm"
+  },
+  {
+    "name": "JD Asere",
+    "file": "https://www.youtube.com/watch?v=N_AuTGNw7mE",
+    "genre": "Rap",
+    "lat": "23.069252189052293",
+    "lon": "-82.32808496615252",
+    "filename": "music/JD - Puchogensa (Official Video).webm"
+  },
+  {
+    "name": "Nani Castle",
+    "file": "https://www.youtube.com/watch?v=Mymx9pV3Zzc",
+    "genre": "",
+    "lat": "40.61315527303191",
+    "lon": "-73.39891350131171",
+    "filename": "music/Nani Castle - Crying In The Dark.webm"
+  }
 ]
