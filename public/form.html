@@ -9,6 +9,15 @@
     <!-- Custom Font - Change 'Muli' to the font you want -->
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
+    <style>
+      body {
+      margin: 0;
+      padding: 0;
+      bottom: 20px;
+      left: 5px;
+      }
+      </style>
+      
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -103,13 +112,14 @@
 
       $(document).ready(function(){
         $('input.button').click(function() {
+          console.log('click');
           window.setInterval(foo, 100);
         });
         });
       
       function foo(){
         if(($(".form-submission-text").is(':visible')) && (eventposted==0)){
-          console.log(poop);
+          console.log(test);
           window.location = "http://www.la-red.global";
           eventposted=1;
         }
