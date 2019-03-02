@@ -107,8 +107,10 @@ function showAll(req, res) {
   res.send(artists);
 }
 
-// A route for adding a new word with a score
+// A route for adding a new artist
 app.post('/api/create', addArtist);
+res.send('/', artists)
+  
 
 // Handle that route
 function addArtist(req, res) {
@@ -148,11 +150,6 @@ function addArtist(req, res) {
 
 
   console.log(filename);
-
-  // POST method route
-app.post('/', function (req, res) {
-  res.send('POST request to the homepage')
-})
 
   // Let the request know it's all set
   var artist = {
