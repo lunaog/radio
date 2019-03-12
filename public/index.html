@@ -403,8 +403,9 @@
 	           }
 
 	           new mapboxgl.Popup()
-	             .setLngLat(coordinates)
-	             .setHTML(<a href="/wikipage.html">description</a>)
+							 .setLngLat(coordinates)
+							 .setHTML(description)
+	            // .setHTML(<a href="/wikipage.html">description</a>)
 	             .addTo(map);          
 	         })
 	       });
