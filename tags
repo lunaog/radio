@@ -5835,7 +5835,6 @@
 119	node_modules/iconv-lite/encodings/tables/gb18030-ranges.json	/^{"uChars":[128,165,169,178,184,216,226,235,238,244,248,251,253,258,276,284,300,325,329,334,364,4/;"	n	array:gbChars
 119	node_modules/iconv-lite/encodings/tables/gb18030-ranges.json	/^{"uChars":[128,165,169,178,184,216,226,235,238,244,248,251,253,258,276,284,300,325,329,334,364,4/;"	n	array:uChars
 119	node_modules/iconv-lite/encodings/tables/shiftjis.json	/^["fa80","兤冝冾凬刕劜劦勀勛匀匇匤卲厓厲叝﨎咜咊咩哿喆坙坥垬埈埇﨏塚/;"	a
-12	artists.json	/^  {$/;"	o
 12	node_modules/iconv-lite/encodings/tables/big5-added.json	/^["89b5","肟黇䳍鷉鸌䰾𩷶𧀎鸊𪄳㗁"],$/;"	a
 12	node_modules/iconv-lite/encodings/tables/cp936.json	/^["8280","個倎倐們倓倕倖倗倛倝倞倠倢倣値倧倫倯",10,"倻倽倿偀偁偂偄偅偆/;"	n	array:4
 12	node_modules/iconv-lite/encodings/tables/cp936.json	/^["8380","儉儊儌",5,"儓",13,"儢",28,"兂兇兊兌兎兏児兒兓兗兘兙兛兝",4,"兣兤�/;"	n	array:6
@@ -11116,7 +11115,7 @@ Accept-Encoding Negotiation	node_modules/negotiator/README.md	/^### Accept-Encod
 Accept-Language Negotiation	node_modules/negotiator/README.md	/^### Accept-Language Negotiation$/;"	S
 Accepts	node_modules/accepts/index.js	/^function Accepts (req) {$/;"	c
 Add an Artist	public/form-spanish.html	/^          <h1>Add an Artist<\/h1>$/;"	h
-Add an Artist	public/form.html	/^          <h1>Add an Artist<\/h1>$/;"	h
+Add an Artist / Añadir Artista	public/form.html	/^          <h1>Add an Artist \/ Añadir Artista<\/h1>$/;"	h
 Adding Custom Media Types	node_modules/mime-db/README.md	/^## Adding Custom Media Types$/;"	s
 Adding Types	node_modules/mime-types/README.md	/^## Adding Types$/;"	s
 All the Rest	node_modules/safe-buffer/README.md	/^### All the Rest$/;"	S
@@ -18014,16 +18013,15 @@ fetchSpec	node_modules/unpipe/package.json	/^    "fetchSpec": "1.0.0"$/;"	s	obje
 fetchSpec	node_modules/utils-merge/package.json	/^    "fetchSpec": "1.0.1"$/;"	s	object:_requested
 fetchSpec	node_modules/vary/package.json	/^    "fetchSpec": "1.1.2"$/;"	s	object:_requested
 fieldContentRegExp	node_modules/cookie/index.js	/^var fieldContentRegExp = \/^[\\u0009\\u0020-\\u007e\\u0080-\\u00ff]+$\/;$/;"	v
-file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=0Kg9xRooTVk",$/;"	s	object:12
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=0LSH5ikkjaw",$/;"	s	object:2
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=MThrfYC5Y0Y",$/;"	s	object:0
-file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=Mymx9pV3Zzc",$/;"	s	object:11
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=N_AuTGNw7mE",$/;"	s	object:10
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=N_AuTGNw7mE",$/;"	s	object:9
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=RUahaIAJOZY",$/;"	s	object:3
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=S35ggfyWKUE",$/;"	s	object:6
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=W8x4LTQpsts",$/;"	s	object:8
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=_fx6ms1Byo4",$/;"	s	object:1
+file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=hzqFmXZ8tOE",$/;"	s	object:11
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=kOAa2ImTPAE",$/;"	s	object:7
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=tbrT2Oi7kQM",$/;"	s	object:4
 file	artists.json	/^    "file": "https:\/\/www.youtube.com\/watch?v=vpsLTibxq7U",$/;"	s	object:5
@@ -18038,9 +18036,8 @@ filename	artists.json	/^    "filename": "music\/El Individuo - Baila, Official A
 filename	artists.json	/^    "filename": "music\/Intermitência.webm"$/;"	s	object:7
 filename	artists.json	/^    "filename": "music\/JD - Puchogensa (Official Video).webm"$/;"	s	object:10
 filename	artists.json	/^    "filename": "music\/JD - Puchogensa (Official Video).webm"$/;"	s	object:9
-filename	artists.json	/^    "filename": "music\/Nani Castle - Crying In The Dark.webm"$/;"	s	object:11
-filename	artists.json	/^    "filename": "music\/Nicki Minaj - Feeling Myself (Audio) ft. Beyoncé.webm"$/;"	s	object:12
 filename	artists.json	/^    "filename": "music\/Ola de la Mar.webm"$/;"	s	object:8
+filename	artists.json	/^    "filename": "music\/Protoje - Who Knows ft. Chronixx (Official Music Video).webm"$/;"	s	object:11
 filename	artists.json	/^    "filename": "music\/Sorie Kondi-Without Money No Family (Chief Boima Remix).webm"$/;"	s	object:6
 filename	artists.json	/^    "filename": "music\/Young Ragga - Caducó (Con Link De Descarga) (CD - Ragga Muffin Style).w/;"	s	object:0
 filename	server.js	/^    filename:filename$/;"	p	class:addArtist.artist
@@ -18176,7 +18173,6 @@ gb231280	node_modules/iconv-lite/encodings/dbcs-data.js	/^    'gb231280': 'cp936
 gbChars	node_modules/iconv-lite/encodings/tables/gb18030-ranges.json	/^{"uChars":[128,165,169,178,184,216,226,235,238,244,248,251,253,258,276,284,300,325,329,334,364,4/;"	a
 gbk	node_modules/iconv-lite/encodings/dbcs-data.js	/^    'gbk': {$/;"	c	class:module.exports
 generateETag	node_modules/express/lib/utils.js	/^  return function generateETag (body, encoding) {$/;"	f	function:createETagGenerator
-genre	artists.json	/^    "genre": "",$/;"	s	object:11
 genre	artists.json	/^    "genre": "Afrofuturism",$/;"	s	object:7
 genre	artists.json	/^    "genre": "Electronic",$/;"	s	object:6
 genre	artists.json	/^    "genre": "Electropalo",$/;"	s	object:8
@@ -18188,7 +18184,7 @@ genre	artists.json	/^    "genre": "Rap",$/;"	s	object:5
 genre	artists.json	/^    "genre": "Rap",$/;"	s	object:9
 genre	artists.json	/^    "genre": "Reggae",$/;"	s	object:0
 genre	artists.json	/^    "genre": "Reggae",$/;"	s	object:3
-genre	artists.json	/^    "genre": "sdf",$/;"	s	object:12
+genre	artists.json	/^    "genre": "poo",$/;"	s	object:11
 genre	server.js	/^    genre:genre,$/;"	p	class:addArtist.artist
 georgianacademy	node_modules/iconv-lite/encodings/sbcs-data-generated.js	/^  "georgianacademy": {$/;"	c	class:module.exports
 georgianps	node_modules/iconv-lite/encodings/sbcs-data-generated.js	/^  "georgianps": {$/;"	c	class:module.exports
@@ -18818,7 +18814,7 @@ languages()	node_modules/negotiator/README.md	/^##### languages()$/;"	T
 languages(availableLanguages)	node_modules/negotiator/README.md	/^##### languages(availableLanguages)$/;"	T
 lastModified	node_modules/send/README.md	/^##### lastModified$/;"	T
 lastModified	node_modules/serve-static/README.md	/^##### lastModified$/;"	T
-lat	artists.json	/^    "lat": "-0.8788717827910517",$/;"	s	object:12
+lat	artists.json	/^    "lat": "-0.04394530816487929",$/;"	s	object:11
 lat	artists.json	/^    "lat": "-1.984907557896051",$/;"	s	object:7
 lat	artists.json	/^    "lat": "18.040158909774618",$/;"	s	object:0
 lat	artists.json	/^    "lat": "18.473866335067783",$/;"	s	object:8
@@ -18829,7 +18825,6 @@ lat	artists.json	/^    "lat": "22.729920374551384",$/;"	s	object:3
 lat	artists.json	/^    "lat": "23.069252189052293",$/;"	s	object:10
 lat	artists.json	/^    "lat": "23.069252189052293",$/;"	s	object:9
 lat	artists.json	/^    "lat": "37.5413380401788",$/;"	s	object:5
-lat	artists.json	/^    "lat": "40.61315527303191",$/;"	s	object:11
 lat	artists.json	/^    "lat": "8.556013298366935",$/;"	s	object:6
 lat	server.js	/^    lat:lat,$/;"	p	class:addArtist.artist
 latin1	node_modules/iconv-lite/encodings/sbcs-data.js	/^    "latin1": "iso88591",$/;"	p	class:module.exports
@@ -18956,14 +18951,13 @@ lon	artists.json	/^    "lon": "-122.40315880151134",$/;"	s	object:5
 lon	artists.json	/^    "lon": "-49.12581210387276",$/;"	s	object:7
 lon	artists.json	/^    "lon": "-66.39336755525164",$/;"	s	object:0
 lon	artists.json	/^    "lon": "-69.99022176600658",$/;"	s	object:8
-lon	artists.json	/^    "lon": "-73.39891350131171",$/;"	s	object:11
 lon	artists.json	/^    "lon": "-82.32808496615252",$/;"	s	object:10
 lon	artists.json	/^    "lon": "-82.32808496615252",$/;"	s	object:9
 lon	artists.json	/^    "lon": "-83.61450826957031",$/;"	s	object:1
 lon	artists.json	/^    "lon": "-83.65631003845715",$/;"	s	object:3
 lon	artists.json	/^    "lon": "-83.99437392851581",$/;"	s	object:2
 lon	artists.json	/^    "lon": "-99.18188050694658",$/;"	s	object:4
-lon	artists.json	/^    "lon": "0.35156250001762146",$/;"	s	object:12
+lon	artists.json	/^    "lon": "0.09887695312414735",$/;"	s	object:11
 lon	server.js	/^    lon:lon,$/;"	p	class:addArtist.artist
 longValue	node_modules/ipaddr.js/ipaddr.min.js	/^(function(){var r,t,n,e,i,o,a,s;t={},s=this,"undefined"!=typeof module&&null!==module&&module.ex/;"	p	class:e
 longValue	node_modules/ipaddr.js/lib/ipaddr.js	/^    longValue: new RegExp("^" + ipv4Part + "$", 'i')$/;"	p	class:ipv4Regexes
@@ -19264,12 +19258,11 @@ name	artists.json	/^    "name": "El Cepe MC",$/;"	s	object:1
 name	artists.json	/^    "name": "El Individuo",$/;"	s	object:2
 name	artists.json	/^    "name": "JD Asere",$/;"	s	object:10
 name	artists.json	/^    "name": "JD Asere",$/;"	s	object:9
-name	artists.json	/^    "name": "Nani Castle",$/;"	s	object:11
 name	artists.json	/^    "name": "Nikola",$/;"	s	object:8
 name	artists.json	/^    "name": "Sorie Kondi",$/;"	s	object:6
 name	artists.json	/^    "name": "Young Ragga",$/;"	s	object:0
 name	artists.json	/^    "name": "Ziminino",$/;"	s	object:7
-name	artists.json	/^    "name": "sdf",$/;"	s	object:12
+name	artists.json	/^    "name": "poo",$/;"	s	object:11
 name	node_modules/accepts/package.json	/^      "name": "Douglas Christopher Wilson",$/;"	s	object:contributors.0
 name	node_modules/accepts/package.json	/^      "name": "Jonathan Ong",$/;"	s	object:contributors.1
 name	node_modules/accepts/package.json	/^    "name": "accepts",$/;"	s	object:_requested
