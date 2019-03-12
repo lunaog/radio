@@ -392,8 +392,6 @@
 	           artist = JSON.parse(e.features[0].properties.artist);
              var description = artist["name"];  
 
-             
-
             // grab source element with id "audioFile"
             // set attribute "src" to file
             var elt = document.getElementById("audioFile");
@@ -406,7 +404,7 @@
 
 	           new mapboxgl.Popup()
 	             .setLngLat(coordinates)
-	             .setHTML(description)
+	             .setHTML(<a href="/wikipage.html">description</a>)
 	             .addTo(map);          
 	         })
 	       });
