@@ -14,28 +14,27 @@
 	       body {
 	       margin: 0;
 	       padding: 0;
-				 
 	       }
 
-				 .map-overlay {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.8);
-  margin-right: 20px;
-  font-family: Arial, sans-serif;
-  overflow: auto;
-  border-radius: 3px;
-}
+				.map-overlay {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				background: rgba(255, 255, 255, 0.8);
+				margin-right: 20px;
+				font-family: Arial, sans-serif;
+				overflow: auto;
+				border-radius: 3px;
+				}
 	       
 				 #legend {
-  padding: 10px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  line-height: 18px;
-  height: 150px;
-  margin-bottom: 40px;
-  width: 100px;
-}
+				padding: 10px;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+				line-height: 18px;
+				height: 150px;
+				margin-bottom: 40px;
+				width: 100px;
+				}
 
 	       #container {
          position: absolute;
@@ -120,10 +119,8 @@
 					font-family: Arial;
 					font-size: 15px;
 					font-style: normal;
-					font-weight: normal;
-					 
+					font-weight: normal; 
 				 }
-				
 
          #map {
 				 position: absolute;
@@ -147,53 +144,53 @@
 	       display: none;
            }
 
-           audio {
-             display: block;
-             width: 34%;
-             height: 55px;
-             border: solid;
-             border-width: 15px;            
-             border-color: #DCDCDC;
-             border-radius: 1px;
-             background-color: #DCDCDC;
-             position: absolute;
-						 bottom: -11px;
-						 right: 0px;
-
-             filter: sepia(50%) saturate(400%) grayscale(0) contrast(1000%) hue-rotate(-66deg) invert(14%);
+          audio {
+          display: block;
+          width: 34%;
+         	height: 55px;
+  	      border: solid;
+          border-width: 15px;            
+          border-color: #DCDCDC;
+          border-radius: 1px;
+          background-color: #DCDCDC;
+          position: absolute;
+					bottom: -11px;
+					right: 0px;
+          filter: sepia(50%) saturate(400%) grayscale(0) contrast(1000%) hue-rotate(-66deg) invert(14%);
            }
           
-           .mapboxgl-popup-close-button {
-             display: none;
-           }
+          .mapboxgl-popup-close-button {
+          display: none;
+          }
 
-           .mapboxgl-popup-content {
-             padding: 5;
-             width: 100%;  
-            border-radius: 1px;
-             align-content: center;
-            }
+          .mapboxgl-popup-content {
+          padding: 5;
+          width: 100%;  
+        	border-radius: 1px;
+          align-content: center;
+        	}
             
-            .mapboxgl-popup-content {
-            color: blue;
-            font: 12px/20px 'Open Sans', sans-serif;
-            }
+        	.mapboxgl-popup-content {
+        	color: blue;
+          font: 12px/20px 'Open Sans', sans-serif;
+          }
 
-            .mapboxgl-popup-tip{
-              display: none;
-            }
+        	.mapboxgl-popup-tip{
+          display: none;
+          }
        
 	</style>
 </head>
+
+
 <body>
-  <div id= "container">
+  <!-- <div id= "container"> -->
 	<div class='map-overlay' id='legend'>
 		
 		<h3>
 				La Red Radio
 		</h3>        
-		</div>
-	</div>
+		<!-- </div> -->
 	<button id="espanol">Español</button>
 	<div id= "container-3">
 		<h5> 
@@ -213,14 +210,13 @@
 			Fill out the form with a Youtube Video.
 			<br><br>
 			Go back to the main page. You should see your music added :) </h5> 
-		</div>
-		
-		
+	</div>	
 
     <p class="visually-hidden audio-transcript" tabindex="0"> </p>
     <audio controls id="audioFile" type="audio/webm" autoplay="autoplay" controlsList="nodownload"></audio>
-    
-		</div></audio>
+		</div>
+	</audio>
+</div>
 		
 <div id="map"></div>     	     
 	<pre id='mouseLatLong'></pre>
