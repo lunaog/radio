@@ -54,22 +54,21 @@
 				 }
 				 
         #description {
-					text-align: justify;
+					text-align: center;
 					font-family: Arial;
 					text-align: justify;
 					bottom: 1500px;
 				 }
 				 
 				 #espanol {
-					 position: absolute;
-	       bottom: 550px;
-				 right: 50px;
-				 color: #C0BDA5;
-				 font-family: Arial;
-				 padding: 0;
-				border: none;
-				background: none;
-				font-size: 15px;
+					position: absolute;
+				 	right: 50px;
+				 	color: #C0BDA5;
+				 	font-family: Arial;
+				 	padding: 0;
+					border: none;
+					background: none;
+					font-size: 15px;
          }
 
 				 h3 {
@@ -396,8 +395,8 @@
 
 	           new mapboxgl.Popup()
 							 .setLngLat(coordinates)
-							 //.setHTML(description)
-						  .setHTML('<a href= "/wikipage.html">' + description + '</a>')
+							 .setHTML(description)
+						  // .setHTML('<a href= "/wikipage.html">' + description + '</a>')
 	             .addTo(map);          
 	         })
 	       });
