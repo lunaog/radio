@@ -232,7 +232,8 @@
 	   const map = new mapboxgl.Map({
 	     container: 'map',
 	     style: 'mapbox://styles/luna-og/cjuyxivaz24d11fqhw6v9ldz5',
-			//  zoom: "9",
+			 center: [6.075011, -28.769470], // starting position
+	zoom: "2",
 			 maxZoom: "9",
 			 minZoom: "3"
 	   });
@@ -311,8 +312,6 @@
 	                            'M3pxMndwZDg3b3ltNjFoIn0.38MEVY0yF9PIxTBqHuJ' +
 	                            'V0Q';
 	     map.on('load', function() {
-	     //map.loadImage("https://cdn0.iconfinder.com/data/icons/small-n-flat/" +
-	     //              "24/678111-map-marker-512.png",
 	       map.loadImage("/marker2.png",
 	       // this is where we load the image file
 	       function(error, image) { 
