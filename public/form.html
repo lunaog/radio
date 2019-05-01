@@ -23,10 +23,19 @@ padding-left: 15px;
 margin-right: auto;
 margin-left: auto;
 padding-top: 20px;
+display: inline-block;
 text-align: center;
 font-family: 'Press Start 2P';
 color: #3F692B;
       }
+
+      h2 {
+        text-align: justify;
+        font-family: 'Press Start 2P';
+					color: #3F692B;
+					font-size: 30px;
+				 }
+
       </style>
 
 
@@ -45,7 +54,7 @@ color: #3F692B;
       <div class="col-md-8">
         <form id="form" action="/api/create" method="POST">
 
-          <h6>Add an Artist / Añadir Artista</h6>
+          <h2>Add an Artist / Añadir Artista</h2>
           <div class="form-group">
             <label for="name">Artist Name / Nombre Artístico</label>
             <input type="text" name="name" placeholder="" class="form-control" id="name" required>
