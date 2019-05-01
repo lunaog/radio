@@ -144,12 +144,11 @@
   
   function foo(){
     if(($(".form-submission-text").is(':visible')) && (eventposted==0)){
-      console.log(test);
-      window.location = "http://www.la-red.global";
+      setTimeout("location.href = 'http://www.yoursite.com';",5000);
+      // window.location = "http://www.la-red.global";
       eventposted=1;
     }
   }
 </script>
-
-
 </html>
+
